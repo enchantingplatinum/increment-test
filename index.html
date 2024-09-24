@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Increment Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #counter {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        #incrementButton {
+            padding: 10px 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="counter">0</div>
+    <button id="incrementButton">Click Me!</button>
+
+    <script>
+        let count = 0;
+        const counter = document.getElementById('counter');
+        const button = document.getElementById('incrementButton');
+
+        button.addEventListener('click', () => {
+            count++;
+            counter.textContent = count;
+        });
+    </script>
+
+</body>
+</html>
